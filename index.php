@@ -1,4 +1,7 @@
 <?php
+	error_reporting(E_ALL);
+    ini_set("display_errors", 1);
+
 	session_start();
 
 	// Autoload the required files
@@ -43,7 +46,14 @@
 		</script>
 	</head>
 	<body>
-		<div class="fb-like" data-share="true" data-width="450" data-show-faces="true"></div>
+		<h1>Mon application facebook</h1>
+
+        <div
+          class="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true">
+        </div>
 
 	<?php
 		$loginUrl = $helper->getLoginUrl();
